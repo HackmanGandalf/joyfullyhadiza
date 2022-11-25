@@ -19,6 +19,7 @@
 						<ul class="links">
 							<li class="active"><a href="{{ url_for('home') }}">Home</a></li>
 							<li><a href="{{ url_for('journaling_prompts') }}">Journaling Prompts</a></li>
+							<li><a href="{{ url_for('plan_2023') }}">Let's Plan 2023!</a></li>
 							<li><a href="{{ url_for('newsletter') }}">Newsletter</a></li>
 						</ul>
 						<ul class="icons">
@@ -54,38 +55,38 @@
 							<!-- <section class="posts">
 								<article>
 									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
+										<span class="date">Nov 24, 2022</span>
+										<h2><a href="{{ url_for('plan_2023') }}">Pre-order "Let's plan<br />
+										2023 Together!"</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="static/images/pic02.jpg" alt="" /></a>
+									<a href="{{ url_for('plan_2023') }}" class="image fit"><img src="static/images/e-book.jpeg" alt="" /></a>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="{{ url_for('plan_2023') }}" class="button">Continue</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
+										<span class="date">Nov 15, 2022</span>
+										<h2><a href="{{ url_for('journaling_prompts') }}">Download Journaling<br />
+										Prompts</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="static/images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="{{ url_for('journaling_prompts') }}" class="image fit"><img src="static/images/pic04.jpg" alt="" /></a>
+									<p>I have curated some journaling prompts just for you!</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="{{ url_for('journaling_prompts') }}" class="button">Check it out</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
+										<span class="date">Sept 22, 2022</span>
+										<h2><a href="{{ url_for('newsletter') }}">Subscribe to my<br />
+										newsletter</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="static/images/pic04.jpg" alt="" /></a>
+									<a href="{{ url_for('newsletter') }}" class="image fit"><img src="static/images/pic03.jpg" alt="" /></a>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="{{ url_for('newsletter') }}" class="button">Subscribe</a></li>
 									</ul>
 								</article>
 								<article>
@@ -123,8 +124,8 @@
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul>
-								</article>
-							</section> -->
+								</article> -->
+							</section>
 
 						<!-- Footer -->
 							<!-- <footer>

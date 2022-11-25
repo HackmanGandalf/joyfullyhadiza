@@ -120,6 +120,11 @@ def unsuscribe_form():
     
     return render_template('newsletter_unsubscribe.html')
 
+@app.route('/plan_2023')
+def plan_2023():
+    
+    return render_template('plan_2023.html')
+
 @app.route('/journaling_prompts')
 def journaling_prompts():
     

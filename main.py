@@ -104,10 +104,6 @@ JoyfullyHadiza
 def download_journaling_prompts():
     return send_from_directory("static", filename="files/joyfully hadiza journalling prompt.pdf", as_attachment=True)
 
-@app.route('/4c4554275320504c414e203230323320544f474554484552')
-def download_plan_2023():
-    return send_from_directory("static", filename="files/LET'S PLAN 2023 TOGETHER.pdf", as_attachment=True)
-
 @app.route('/newsletter')
 def newsletter():
     

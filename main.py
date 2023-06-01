@@ -34,7 +34,7 @@ def form():
     }
 }
 
-    response = requests.post("https://api.sheety.co/dca7e824c74318dc6864df71ab8952d0/signupForm/emails", json=sheety_parameter)
+    response = requests.post(sheet_endpoint, json=sheety_parameter)
     print("response.status_code =", response.status_code)
 
     msg = MIMEMultipart('alternative')
@@ -142,7 +142,7 @@ def download_prompts_form():
     }
 }
 
-    response = requests.post("https://api.sheety.co/dca7e824c74318dc6864df71ab8952d0/signupForm/journalingPromptsDownloads", json=sheety_parameter)
+    response = requests.post(sheet_endpoint, json=sheety_parameter)
     print("response.status_code =", response.status_code)
     
     msg = MIMEMultipart('alternative')
